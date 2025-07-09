@@ -39,6 +39,9 @@ void runPrimesTask() {
     int ten;
     std::cout << "Введите десятку: ";
     std::cin >> ten;
+    if (ten <= 0){
+        std::cout << "Введите число больше нуля" << std::endl;
+    }
     int startTen = (ten - 1) * 10;
     int endTen = startTen + 9;
     int arrTen[4];
