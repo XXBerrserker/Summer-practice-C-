@@ -32,8 +32,8 @@ void generateAndSaveData(int count) {
         string code = generateCode();
         string title = generateTitle();
         int cost = generateCost();        
-        fileF << code << " " << title << "\n";        
-        fileG << code << " " << cost << "p\n";        
+        fileF << code << " " << cost << "\n";        
+        fileG << code << " " << title << "p\n";        
         fileH << code << " " << title << " " << cost << "p\n";
     }
     fileF.close();
